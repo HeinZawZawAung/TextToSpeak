@@ -36,6 +36,12 @@ let textschema = new Schema({
 let Text = mongoose.model('Text',textschema);
 exports.Text = Text;
 
+let textschema123 = new Schema({
+    value : String,
+    hashvalue : String
+},{timestamp: true});
+let Text123 = mongoose.model('Text',textschema123);
+exports.Text1 = Text123;
 
 
 //audiorecord  saving to database
